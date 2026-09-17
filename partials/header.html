@@ -1,0 +1,116 @@
+<!-- partials/header.html -->
+<header class="encabezado">
+  <!-- 1. Logo a la izquierda -->
+  <a class="marca" href="index.html" aria-label="Ir al inicio">
+    <img src="assets/logo-bomba-ohiggins.png" alt="Logo Bomba O'Higgins">
+    <span>Bomba O'Higgins</span>
+  </a>
+
+  <!-- 2. Banner de vehículos al centro -->
+  <div class="banner-operativo-largo">
+    <div class="bloque-estado-general">
+      <div class="indicador-vivo">
+        <span class="punto-pulso"></span>
+        <span class="texto-guardia">CUARTEL PRIMERA</span>
+      </div>
+    </div>
+
+    <div class="divisor-vertical"></div>
+
+    <div class="bloque-flota-largo">
+    
+      <div class="lista-carros-largo">
+        <div class="item-carro-largo disponible">
+          <span class="badge-carro">B-1</span>
+          <span class="estado-carro">EN SERVICIO</span>
+        </div>
+        <div class="item-carro-largo disponible">
+          <span class="badge-carro">H-1</span>
+          <span class="estado-carro">EN SERVICIO</span>
+        </div>
+        <div class="item-carro-largo fuera-servicio">
+          <span class="badge-carro">BH-1</span>
+          <span class="estado-carro">FUERA DE SERVICIO</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="divisor-vertical"></div>
+
+    <div class="bloque-despacho-largo">
+      <span class="etiqueta-seccion-mini">Último Despacho</span>
+      <div class="info-despacho-largo">
+        <span class="clave-despacho">10-0-1</span>
+        <div>
+          <p class="lugar-despacho">Av. O'Higgins con Estado</p>
+          <span class="fecha-despacho">Hace 45 minutos</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contenedor Derecho: Botón Hamburguesa y Panel Lateral -->
+  <div class="contenedor-menu-derecha">
+    <!-- Botón Menú Hamburguesa a la derecha -->
+    <button class="menu-hamburguesa" id="boton-menu" aria-label="Abrir Menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Panel Desplegable Lateral -->
+    <nav class="menu-principal" id="nav-principal" aria-label="Navegación principal">
+      <a href="index.html#inicio">Inicio</a>
+
+      <div class="menu-desplegable">
+        <a class="menu-titulo" href="javascript:void(0)">Historia</a>
+        <ul>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="martires.html">Mártires</a></li>
+          <li><a href="fundadores.html">Fundadores</a></li>
+          <li><a href="biblioteca.html">Biblioteca</a></li>
+          <li>
+            <a href="canje.html" class="enlace-canje">
+              <img src="assets/icons/bandera-espana.png" alt="España" class="icono-bandera">
+              Canje
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="menu-desplegable">
+        <a class="menu-titulo" href="javascript:void(0)">Pr1mera</a>
+        <ul>
+          <li><a href="oficiales.html">Oficiales</a></li>
+          <li><a href="voluntarios.html">Voluntarios</a></li>
+          <li><a href="material-mayor.html">Material mayor</a></li>
+          <li><a href="especialidad.html">Especialidad</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+        </ul>
+      </div>
+
+      <div class="menu-desplegable">
+        <a class="menu-titulo" href="javascript:void(0)">Brigada Juvenil</a>
+        <ul>
+          <li><a href="B-J-historia.html">Historia</a></li>
+          <li><a href="B-J-actividades.html">Actividades</a></li>
+        </ul>
+      </div>
+
+      <a href="noticias.html">Noticias</a>
+      <a href="contacto.html">Contacto</a>
+
+      <div class="redes-menu" aria-label="Redes sociales">
+        <a href="https://www.facebook.com/primeraohiggins/?ref=NONE_xav_ig_profile_page_web#" target="_blank" rel="noopener noreferrer">
+          <img src="assets/icons/facebook.svg" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/bombaohiggins/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/icons/instagram.svg" alt="Instagram">
+        </a>
+        <a href="https://x.com/CentralCBRgua?lang=es" target="_blank" rel="noopener noreferrer">
+          <img src="assets/icons/x-twitter.svg" alt="X">
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
