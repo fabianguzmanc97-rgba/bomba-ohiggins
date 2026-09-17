@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Bomba O'Higgins</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+
+  <div id="header-placeholder"></div>
+
+ <main>
+  <section class="seccion-oficiales-pagina">
+    
+    <!-- Encabezado Principal -->
+    <div class="encabezado-historia">
+      <p class="etiqueta">Bomba O'Higgins</p>
+      <h1>Contacto y Ubicación</h1>
+      <div class="linea-decorativa"></div>
+    </div>
+
+    <!-- Contenedor Principal Unificado -->
+    <div class="caja-historia">
+      
+      <!-- Banner SOAP Integrado -->
+      <div class="soap-card-integrada">
+        <div class="soap-escudo">
+          <img src="assets/logo-bomba-ohiggins.png" alt="Escudo Bomba O'Higgins">
+        </div>
+        <div class="soap-info">
+          <div class="soap-meta">
+            <span class="soap-tag">¡Apoya a la Pr1mera!</span>
+            <span class="soap-separador">•</span>
+            <span class="soap-bajada">SOAP Bomberos</span>
+          </div>
+          <h3>Compra tu SOAP y Donación Directa</h3>
+          <p>
+            Al contratar tu Seguro Obligatorio (SOAP), puedes destinar un aporte directo a la <strong>Primera Compañía "Bomba O'Higgins"</strong>.
+          </p>
+        </div>
+        <div class="soap-accion">
+          <a href="https://soapbomberos.cl/donacion/1-cia-rancagua" target="_blank" rel="noopener noreferrer" class="boton-soap-minimal">
+            Comprar y Donar
+          </a>
+        </div>
+      </div>
+
+      <div class="linea-division"><span>Escríbenos o Visítanos</span></div>
+
+      <!-- Grilla Formulario + Mapa -->
+      <div class="grilla-contacto">
+        
+        <!-- Columna Izquierda: Formulario -->
+        <div class="bloque-formulario">
+          <span class="cargo-oficial">Mensajes</span>
+          <h3 class="nombre-oficial" style="font-size: 1.2rem; margin-bottom: 18px;">Formulario de Consulta</h3>
+          
+          <form class="formulario-contacto" action="#" method="POST">
+            
+            <div class="grupo-campo">
+              <label for="nombre">Nombre Completo</label>
+              <div class="campo-con-icono">
+                <svg class="icono-svg-campo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+              </div>
+            </div>
+
+            <div class="grupo-doble">
+              <div class="grupo-campo">
+                <label for="telefono">Teléfono</label>
+                <div class="campo-con-icono">
+                  <svg class="icono-svg-campo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  <input type="tel" id="telefono" name="telefono" placeholder="+56 9 1234 5678" required>
+                </div>
+              </div>
+
+              <div class="grupo-campo">
+                <label for="correo">Correo Electrónico</label>
+                <div class="campo-con-icono">
+                  <svg class="icono-svg-campo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="grupo-campo">
+              <label for="pais">País</label>
+              <div class="campo-con-icono">
+                <svg class="icono-svg-campo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                <select id="pais" name="pais" required>
+                  <option value="" disabled selected>Selecciona tu país</option>
+                  <option value="Chile">Chile</option>
+                  <option value="Argentina">Argentina</option>
+                  <option value="Perú">Perú</option>
+                  <option value="Bolivia">Bolivia</option>
+                  <option value="Colombia">Colombia</option>
+                  <option value="España">España</option>
+                  <option value="México">México</option>
+                  <option value="Otro">Otro país</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="grupo-campo">
+              <label for="consulta">Consulta o Mensaje</label>
+              <div class="campo-con-icono">
+                <svg class="icono-svg-campo icono-textarea" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                <textarea id="consulta" name="consulta" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="boton-enviar">
+              <span>Enviar Consulta</span>
+              <svg class="icono-svg-boton" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+
+          </form>
+        </div>
+
+        <!-- Columna Derecha: Mapa e Información -->
+        <div class="bloque-mapa">
+          <span class="cargo-oficial">Ubicación</span>
+          <h3 class="nombre-oficial" style="font-size: 1.2rem; margin-bottom: 18px;">Nuestro Cuartel</h3>
+          
+          <div class="tarjeta-info-iconos">
+            <div class="item-info-cuartel">
+              <div class="circulo-icono-cuartel">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <span class="titulo-info-item">Dirección</span>
+                <p class="texto-info-item">O'Carrol 485, Rancagua</p>
+              </div>
+            </div>
+
+            <div class="item-info-cuartel">
+              <div class="circulo-icono-cuartel">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <span class="titulo-info-item">Horario de Funcionamiento</span>
+                <p class="texto-info-item">24 Horas • 365 Dias</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mapa con Pin Exacto -->
+          <div class="marco-mapa">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3298.563836184511!2d-70.7451944!3d-34.1664167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96634360e227d819%3A0x6b2e1a384f938928!2sO&#39;Carrol%20485%2C%20Rancagua%2C%20O&#39;Higgins!5e0!3m2!1ses!2scl!4v1700000000000!5m2!1ses!2scl" 
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+</main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="assets/incluir-header.js" defer></script>
+</body>
+
+</html>

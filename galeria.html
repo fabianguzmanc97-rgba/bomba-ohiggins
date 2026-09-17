@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería Virtual | Bomba O'Higgins</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+
+  <div id="header-placeholder"></div>
+
+  <main>
+    <!-- Contenedor inmersivo de pantalla completa -->
+    <section class="seccion-galeria-exposicion">
+      
+      <!-- Encabezado de la Exposición -->
+      <div class="encabezado-historia">
+        <p class="etiqueta-galeria-premium">Registro Fotográfico Institucional</p>
+        <h1>Galería Virtual</h1>
+        <div class="linea-decorativa"></div>
+      </div>
+
+      <!-- Mosaico Fotográfico de Ancho Completo -->
+      <div class="mosaico-galeria-full">
+
+        <div class="item-mosaico ancho-2 alto-2">
+          <img src="assets/Galeria Historia/galeria-historia-1.jpeg" alt="Fotografía Histórica 1">
+          <div class="capa-accion">
+            <span class="btn-lupa">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M14 10l6-6M9 21H3v-6M10 14l-6 6"/></svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="item-mosaico">
+          <img src="assets/Galeria Historia/galeria-historia-2.jpeg" alt="Fotografía Histórica 2">
+          <div class="capa-accion">
+            <span class="btn-lupa">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M14 10l6-6M9 21H3v-6M10 14l-6 6"/></svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="item-mosaico">
+          <img src="assets/Galeria Historia/galeria-historia-3.jpeg" alt="Fotografía Histórica 3">
+          <div class="capa-accion">
+            <span class="btn-lupa">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M14 10l6-6M9 21H3v-6M10 14l-6 6"/></svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="item-mosaico">
+          <img src="assets/Galeria Historia/galeria-historia-4.jpg" alt="Fotografía Histórica 4">
+          <div class="capa-accion">
+            <span class="btn-lupa">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M14 10l6-6M9 21H3v-6M10 14l-6 6"/></svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="item-mosaico ancho-2">
+          <img src="assets/Galeria Historia/galeria-historia-5.jpg" alt="Fotografía Histórica 5">
+          <div class="capa-accion">
+            <span class="btn-lupa">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M14 10l6-6M9 21H3v-6M10 14l-6 6"/></svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="item-mosaico">
+          <img src="assets/Galeria Historia/galeria-historia-6.jpg" alt="Fotografía Histórica 6">
+          <div class="capa-accion">
+            <span class="btn-lupa">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M14 10l6-6M9 21H3v-6M10 14l-6 6"/></svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="item-mosaico">
+          <img src="assets/Galeria Historia/galeria-historia-7.jpeg" alt="Fotografía Histórica 7">
+          <div class="capa-accion">
+            <span class="btn-lupa">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M14 10l6-6M9 21H3v-6M10 14l-6 6"/></svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="item-mosaico alto-2">
+          <img src="assets/Galeria Historia/galeria-historia-8.jpeg" alt="Fotografía Histórica 8">
+          <div class="capa-accion">
+            <span class="btn-lupa">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M14 10l6-6M9 21H3v-6M10 14l-6 6"/></svg>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Lightbox (Visor emergente) -->
+  <div id="modal-visor" class="modal-visor">
+    <span class="cerrar-visor" id="cerrar-visor">&times;</span>
+    <img class="imagen-modal" id="imagen-ampliada" alt="Vista ampliada">
+  </div>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="assets/incluir-header.js" defer></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const items = document.querySelectorAll(".item-mosaico");
+      const modalVisor = document.getElementById("modal-visor");
+      const imagenAmpliada = document.getElementById("imagen-ampliada");
+      const cerrarVisor = document.getElementById("cerrar-visor");
+
+      items.forEach(item => {
+        item.addEventListener("click", function () {
+          const img = this.querySelector("img");
+          imagenAmpliada.src = img.src;
+          modalVisor.style.display = "flex";
+        });
+      });
+
+      cerrarVisor.addEventListener("click", () => modalVisor.style.display = "none");
+      modalVisor.addEventListener("click", (e) => {
+        if (e.target === modalVisor) modalVisor.style.display = "none";
+      });
+    });
+  </script>
+
+</body>
+
+</html>

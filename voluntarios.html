@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voluntarios | Bomba O'Higgins</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+
+  <div id="header-placeholder"></div>
+
+  <main>
+    <section class="seccion-ancho-completo">
+      
+      <!-- Encabezado Principal -->
+      <div class="encabezado-historia">
+        <p class="etiqueta-seccion-mini">Primera Compañía</p>
+        <h1>Nuestros Voluntarios</h1>
+        <div class="linea-decorativa"></div>
+      </div>
+
+      <!-- Buscador Dinámico -->
+      <div class="contenedor-buscador">
+        <input 
+          type="text" 
+          id="input-buscador" 
+          placeholder="Buscar voluntario por nombre o cargo..." 
+          autocomplete="off"
+        >
+        <span class="icono-buscar">🔍</span>
+      </div>
+
+      <!-- Grilla donde se renderizará la nómina -->
+      <div class="grilla-voluntarios" id="grilla-voluntarios"></div>
+
+      <!-- Mensaje cuando no hay coincidencias -->
+      <p id="mensaje-no-resultados" class="sin-resultados" style="display: none;">
+        No se encontraron voluntarios que coincidan con la búsqueda.
+      </p>
+
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <!-- Scripts -->
+  <script src="assets/incluir-header.js" defer></script>
+  <script src="assets/voluntarios.js" defer></script>
+
+</body>
+
+</html>

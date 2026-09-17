@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca | Bomba O'Higgins</title>
+  <link rel="stylesheet" href="assets/styles.css">
+
+  <!-- PDF.js via CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+</head>
+
+<body class="no-select">
+
+  <div id="header-placeholder"></div>
+
+  <main>
+    <section class="seccion-historia">
+      
+      <!-- Encabezado Principal -->
+      <div class="encabezado-historia">
+        <p class="etiqueta-seccion-mini">Biblioteca Primera</p>
+        <h1>Archivos Históricos</h1>
+        <div class="linea-decorativa"></div>
+      </div>
+
+      <!-- Contenedor Principal Institucional -->
+      <div class="caja-historia">
+        
+        <!-- Grilla de Tarjetas de Documentos -->
+        <div class="grilla-biblioteca">
+
+         
+
+          <!-- Elemento 2 -->
+          <article class="tarjeta-libro" data-pdf="assets/Documentos Biblioteca/Tragedia El Teniente.pdf">
+            <div class="portada-libro">
+              <canvas class="canvas-portada"></canvas>
+            </div>
+            <div class="info-libro">
+              <h3>Tragedia "El Teniente"</h3>
+              <span class="subtitulo-libro">Archivo Documental</span>
+            </div>
+          </article>
+
+          <!-- Elemento 3 -->
+          <article class="tarjeta-libro" data-pdf="assets/Documentos Biblioteca/Oficialidad 1912.pdf">
+            <div class="portada-libro">
+              <canvas class="canvas-portada"></canvas>
+            </div>
+            <div class="info-libro">
+              <h3>Oficialidad 1912</h3>
+              <span class="subtitulo-libro">Archivo Documental</span>
+            </div>
+          </article>
+
+          <!-- Elemento 4 -->
+          <article class="tarjeta-libro" data-pdf="assets/Documentos Biblioteca/Marcha Bomba OHiggins.pdf">
+            <div class="portada-libro">
+              <canvas class="canvas-portada"></canvas>
+            </div>
+            <div class="info-libro">
+              <h3>Marcha Bomba O'Higgins</h3>
+              <span class="subtitulo-libro">Archivo Documental</span>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Visor Emergente (Modal de Lectura) -->
+  <div id="modal-visor" class="modal-pdf" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+    <div class="modal-contenido">
+      <div class="modal-header">
+        <h3 id="modal-titulo">Cargando documento...</h3>
+        <button id="cerrar-modal" class="btn-cerrar" aria-label="Cerrar visor">&times;</button>
+      </div>
+      
+      <div class="visor-toolbar">
+        <button id="prev-page" type="button">Anterior</button>
+        <span>Página <span id="page-num">1</span> de <span id="page-count">0</span></span>
+        <button id="next-page" type="button">Siguiente</button>
+      </div>
+
+      <div class="canvas-wrapper">
+        <canvas id="pdf-render"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="assets/incluir-header.js" defer></script>
+  <script src="assets/visor-pdf.js" defer></script>
+</body>
+
+</html>
